@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./Fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf") format("woff2");
+}
+
+@layer components {
+  .link {
+    @apply inline-block text-[20px] text-text cursor-pointer hover:bg-hover transition-all ease-in-out duration-500 p-5;
+  }
+  .asid-link {
+    @apply text-textS hover:text-text cursor-pointer hover:transition-all ease-in-out duration-700 hover:bg-bgColor p-5 font-medium;
+  }
+  .background {
+    @apply bg-gradient-to-r from-purple-500 to-pink-500;
+  }
+  .span-about{
+    @apply border-b-2 border-[#6d6d6d] text-left block mx-3 md:mx-0 md:w-10/12 my-5 text-p text-lg;
+  }
+  .card-img{
+    @apply w-[300px] h-[150px] md:w-[300px] md:h-[200px]  mx-auto md:mt-20
+  }
+  .img-slid{
+    @apply w-[250px] h-[150px] sm:w-[250px] sm:h-[150px] md:w-[270px] md:h-[150px] lg:w-[350px] lg:h-[200px]  border-white border-4
+  }
+}
